@@ -1,2 +1,5 @@
 Task[[:space:]]2[[:space:]](100000[[:space:]]Articles[[:space:]]Scraping)/articles_100000.csv filter=lfs diff=lfs merge=lfs -text
 Task[[:space:]]2[[:space:]](100000[[:space:]]Articles[[:space:]]Scraping)/100000_articles_scrapping.xlsx filter=lfs diff=lfs merge=lfs -text
+Task[[:space:]]3[[:space:]](Preprocessing)/articles_100000.csv filter=lfs diff=lfs merge=lfs -text
+Task[[:space:]]3[[:space:]](Preprocessing)/final_preprocessed_articles.csv filter=lfs diff=lfs merge=lfs -text
+Task[[:space:]]3[[:space:]](Preprocessing)/Preprocessed[[:space:]]Articles[[:space:]]Excel[[:space:]]File.xlsx filter=lfs diff=lfs merge=lfs -text
