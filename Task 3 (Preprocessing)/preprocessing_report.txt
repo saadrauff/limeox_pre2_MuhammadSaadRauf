@@ -1,0 +1,34 @@
+
+FINAL DATA PREPROCESSING REPORT
+================================
+
+Input file: articles_100000.csv
+Output file: final_preprocessed_articles.csv
+
+Input records processed: 100,000
+Output records saved: 99,900
+Duplicate URL records skipped: 0
+Duplicate text records skipped: 100
+Total duplicate skips: 100
+Invalid/missing URLs: 0
+
+Records with missing titles: 0
+Records with missing content: 0
+Records with missing authors: 14,988
+Records with missing publication dates: 211
+
+Non-empty dates that failed validation: 0
+Invalid year values: 0
+Rows where HTML content changed: 2
+Rows with extra CSV fields: 0
+
+Elapsed time: 93.6 seconds
+Elapsed time in minutes: 1.56 minutes
+
+NOTES
+=====
+Missing author/date values are preserved as blank.
+Invalid dates are reported, not automatically deleted.
+Year/date mismatches are not automatically corrected.
+Near-duplicate articles are not detected by this script.
+HTML removal is rule-based and should be spot-checked.
