@@ -1,0 +1,13 @@
+﻿column,non_missing,missing,completeness_pct
+source_row_index,99900,0,100.0
+title_clean,99900,0,100.0
+author_clean,84964,14936,85.05
+published_at_utc,99730,170,99.83
+year,99730,170,99.83
+time,99730,170,99.83
+news_url_clean,99900,0,100.0
+source,99900,0,100.0
+content_clean,99900,0,100.0
+domain,99900,0,100.0
+published_at_utc_parsed,99730,170,99.83
+duplicate_signature_candidate,99900,0,100.0
