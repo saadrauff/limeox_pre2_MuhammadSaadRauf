@@ -1,0 +1,22 @@
+{
+  "input_file": "C:\\Users\\muham\\OneDrive\\Desktop\\WebScraping\\Task 4 (Validation)\\repair_output\\repaired_articles.csv",
+  "run_timestamp_utc": "2026-10-28T20:46:41.635848+00:00",
+  "input_rows": 99900,
+  "input_columns_after_mapping": 15,
+  "total_issues": 0,
+  "affected_rows": 0,
+  "issues_by_severity": {},
+  "issues_by_rule": {},
+  "dispositions": {
+    "accept": 99900,
+    "warning": 0,
+    "quarantine": 0,
+    "excluded_non_article": 0
+  },
+  "notes": [
+    "The source CSV was not modified.",
+    "A syntactically valid URL is not proof that the page is reachable.",
+    "Duplicate candidates are flagged, not automatically deleted.",
+    "No scraped timestamp was fabricated if the source did not contain one."
+  ]
+}

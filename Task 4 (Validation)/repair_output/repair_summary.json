@@ -1,0 +1,19 @@
+{
+  "input_rows": 99900,
+  "repair_candidates": 7025,
+  "previously_repaired_rows_skipped": 3787,
+  "attempted_this_run": 5788,
+  "repaired_this_run": 3240,
+  "content_updates_this_run": 2219,
+  "title_updates_this_run": 1404,
+  "candidates_not_attempted_this_run": 0,
+  "short_content_remaining": 256,
+  "short_titles_remaining": 4867,
+  "possible_error_pages_remaining": 61,
+  "original_input_modified": false,
+  "runtime_limit_minutes": null,
+  "output_file": "C:\\Users\\muham\\OneDrive\\Desktop\\WebScraping\\Task 4 (Validation)\\repair_output\\repaired_articles.csv",
+  "repair_log": "C:\\Users\\muham\\OneDrive\\Desktop\\WebScraping\\Task 4 (Validation)\\repair_output\\repair_log.csv",
+  "elapsed_minutes": 54.59,
+  "note": "No runtime limit is configured. All pending candidates are attempted unless the process is interrupted. Failed attempts can be retried on later runs. Rows marked REPAIRED are skipped on later runs. A successful HTTP response does not guarantee that the page contains the full article."
+}

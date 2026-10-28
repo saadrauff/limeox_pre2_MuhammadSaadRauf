@@ -3,3 +3,6 @@ Task[[:space:]]2[[:space:]](100000[[:space:]]Articles[[:space:]]Scraping)/100000
 Task[[:space:]]3[[:space:]](Preprocessing)/articles_100000.csv filter=lfs diff=lfs merge=lfs -text
 Task[[:space:]]3[[:space:]](Preprocessing)/final_preprocessed_articles.csv filter=lfs diff=lfs merge=lfs -text
 Task[[:space:]]3[[:space:]](Preprocessing)/Preprocessed[[:space:]]Articles[[:space:]]Excel[[:space:]]File.xlsx filter=lfs diff=lfs merge=lfs -text
+Task[[:space:]]4[[:space:]](Validation)/repair_output/repaired_articles.csv filter=lfs diff=lfs merge=lfs -text
+Task[[:space:]]4[[:space:]](Validation)/validation_output/news_accepted.csv filter=lfs diff=lfs merge=lfs -text
+Task[[:space:]]4[[:space:]](Validation)/validation_output/news_validation_all.csv filter=lfs diff=lfs merge=lfs -text
