@@ -1,0 +1,11 @@
+NEWS CATEGORIZATION REPORT
+==========================
+Total categorized articles: 99,900
+
+Category counts:
+Technology: 65,974
+Other: 25,274
+Health: 3,198
+Politics: 2,705
+Market/Stocks: 1,493
+Energy: 1,256

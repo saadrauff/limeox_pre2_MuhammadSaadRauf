@@ -6,3 +6,5 @@ Task[[:space:]]3[[:space:]](Preprocessing)/Preprocessed[[:space:]]Articles[[:spa
 Task[[:space:]]4[[:space:]](Validation)/repair_output/repaired_articles.csv filter=lfs diff=lfs merge=lfs -text
 Task[[:space:]]4[[:space:]](Validation)/validation_output/news_accepted.csv filter=lfs diff=lfs merge=lfs -text
 Task[[:space:]]4[[:space:]](Validation)/validation_output/news_validation_all.csv filter=lfs diff=lfs merge=lfs -text
+Task[[:space:]]5[[:space:]](Categorization)/Categorized[[:space:]]Data[[:space:]]Excel[[:space:]]File.xlsx filter=lfs diff=lfs merge=lfs -text
+Task[[:space:]]5[[:space:]](Categorization)/news_categorized.csv filter=lfs diff=lfs merge=lfs -text
