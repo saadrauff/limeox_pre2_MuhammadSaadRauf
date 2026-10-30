@@ -1,0 +1,16 @@
+,missing,missing_pct
+validation_issue_codes,99900,100.0
+author_clean,14936,14.95
+year,170,0.17
+time,170,0.17
+published_at_utc,170,0.17
+published_at_utc_parsed,170,0.17
+source_row_index,0,0.0
+news_url_clean,0,0.0
+title_clean,0,0.0
+content_clean,0,0.0
+source,0,0.0
+domain,0,0.0
+duplicate_signature_candidate,0,0.0
+validation_issue_count,0,0.0
+validation_disposition,0,0.0
