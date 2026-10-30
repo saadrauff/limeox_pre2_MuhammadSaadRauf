@@ -1,0 +1,16 @@
+,dtype,non_null,missing,missing_pct,unique_non_null
+source_row_index,int64,99900,0,0.0,99900
+title_clean,str,99900,0,0.0,98286
+author_clean,str,84964,14936,14.95,4085
+published_at_utc,str,99730,170,0.17,6146
+year,float64,99730,170,0.17,30
+time,str,99730,170,0.17,32824
+news_url_clean,str,99900,0,0.0,99900
+source,str,99900,0,0.0,46
+content_clean,str,99900,0,0.0,98289
+domain,str,99900,0,0.0,67
+published_at_utc_parsed,str,99730,170,0.17,6146
+duplicate_signature_candidate,bool,99900,0,0.0,2
+validation_issue_count,int64,99900,0,0.0,1
+validation_issue_codes,float64,0,99900,100.0,0
+validation_disposition,str,99900,0,0.0,1
