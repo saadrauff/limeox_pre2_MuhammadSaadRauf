@@ -1,0 +1,33 @@
+{
+  "rows": 99900,
+  "columns": 23,
+  "exact_duplicate_rows": 0,
+  "missing_pct_by_column": {
+    "source_row_index": 0.0,
+    "title_clean": 0.0,
+    "author_clean": 14.95,
+    "published_at_utc": 0.17,
+    "year": 0.17,
+    "time": 0.17,
+    "news_url_clean": 0.0,
+    "source": 0.0,
+    "content_clean": 0.0,
+    "domain": 0.0,
+    "published_at_utc_parsed": 0.17,
+    "duplicate_signature_candidate": 0.0,
+    "validation_issue_count": 0.0,
+    "validation_issue_codes": 100.0,
+    "validation_disposition": 0.0
+  },
+  "detected_fields": {
+    "url": "news_url_clean",
+    "title": "title_clean",
+    "content": "content_clean",
+    "published": "published_at_utc",
+    "scraped": null,
+    "author": "author_clean",
+    "domain": "domain",
+    "category": null
+  },
+  "outputs_directory": "C:\\Users\\muham\\Downloads\\eda_output"
+}
