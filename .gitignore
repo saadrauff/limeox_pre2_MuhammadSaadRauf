@@ -4,3 +4,5 @@ __pycache__/
 .env
 .vscode/
 articles_checkpoint.csv
+# Large Machine Learning Model Files
+*.pkl
