@@ -1,8 +1,7 @@
-NEWS CATEGORIZATION REPORT
-==========================
-Total categorized articles: 99,900
+GEMINI AI CATEGORIZATION REPORT
+================================
+Total articles: 99,900
 
-Category counts:
 Technology: 65,974
 Other: 25,274
 Health: 3,198
