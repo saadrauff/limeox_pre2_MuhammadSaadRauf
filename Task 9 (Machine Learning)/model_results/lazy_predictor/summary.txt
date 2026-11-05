@@ -1,0 +1,33 @@
+LAZYPREDICT MODEL COMPARISON
+============================
+
+Training sample size: 20000
+Testing sample size: 5000
+
+Models sorted by Accuracy (Highest to Lowest)
+
+                             Accuracy  Balanced Accuracy   ROC AUC  F1 Score  Precision  Recall  Time Taken
+Model                                                                                                      
+RandomForestClassifier         0.7628           0.314162  0.870408  0.739680   0.748113  0.7628    4.115412
+ExtraTreesClassifier           0.7588           0.325769  0.870006  0.738014   0.742511  0.7588    2.950693
+SVC                            0.7516           0.305236       NaN  0.728588   0.719913  0.7516   25.400942
+LinearSVC                      0.7514           0.312200       NaN  0.729132   0.722952  0.7514    3.846799
+LogisticRegression             0.7504           0.320359  0.847290  0.729803   0.722769  0.7504    0.882080
+CalibratedClassifierCV         0.7484           0.318482  0.844727  0.727267   0.715826  0.7484   16.169002
+RidgeClassifierCV              0.7452           0.306290       NaN  0.722398   0.711243  0.7452    0.234739
+RidgeClassifier                0.7450           0.307312       NaN  0.722366   0.711338  0.7450    0.195042
+BaggingClassifier              0.7440           0.323515  0.833611  0.728341   0.722557  0.7440    3.162642
+SGDClassifier                  0.7302           0.304062       NaN  0.713691   0.709044  0.7302    0.858025
+LinearDiscriminantAnalysis     0.7266           0.377023  0.828937  0.720282   0.716096  0.7266    0.502661
+KNeighborsClassifier           0.7266           0.338044  0.815056  0.715391   0.711944  0.7266    0.664446
+AdaBoostClassifier             0.7238           0.253623  0.783450  0.693735   0.667253  0.7238    4.126324
+LabelSpreading                 0.6982           0.341794       NaN  0.696503   0.695519  0.6982   57.783599
+LabelPropagation               0.6982           0.341469       NaN  0.696575   0.695621  0.6982   49.020382
+ExtraTreeClassifier            0.6826           0.340757  0.698026  0.685423   0.688479  0.6826    0.195043
+BernoulliNB                    0.6748           0.342156  0.806924  0.682144   0.723254  0.6748    0.244914
+DecisionTreeClassifier         0.6614           0.312331  0.674220  0.664169   0.667142  0.6614    0.540235
+DummyClassifier                0.6604           0.166667  0.500000  0.525329   0.436128  0.6604    0.165695
+PassiveAggressiveClassifier    0.6542           0.227342       NaN  0.634548   0.628116  0.6542    0.320563
+Perceptron                     0.6534           0.261428       NaN  0.643521   0.638832  0.6534    0.270361
+NearestCentroid                0.5418           0.401529  0.760768  0.588808   0.726856  0.5418    0.201126
+GaussianNB                     0.0378           0.221812  0.694090  0.039636   0.846372  0.0378    0.169979

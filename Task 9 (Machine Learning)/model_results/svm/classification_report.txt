@@ -1,0 +1,12 @@
+               precision    recall  f1-score   support
+
+       Energy       0.07      0.31      0.11       251
+       Health       0.32      0.27      0.29       640
+Market/Stocks       0.20      0.51      0.28       298
+        Other       0.60      0.72      0.65      5055
+     Politics       0.12      0.06      0.08       541
+   Technology       0.88      0.74      0.80     13195
+
+     accuracy                           0.69     19980
+    macro avg       0.36      0.44      0.37     19980
+ weighted avg       0.75      0.69      0.71     19980
