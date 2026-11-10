@@ -1,0 +1,24 @@
+{
+    "library": "TPOT",
+    "version": "1.1.0",
+    "search_space": "linear",
+    "best_pipeline": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('selectpercentile',\n                 SelectPercentile(percentile=37.1143747020325)),\n                ('featureunion-1',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('featureunion-2',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('baggingclassifier',\n                 BaggingClassifier(bootstrap=np.False_,\n                                   bootstrap_features=np.False_,\n                                   max_features=0.595178233874,\n                                   max_samples=0.3781027783537, n_estimators=40,\n                                   n_jobs=1, random_state=42))])",
+    "training_records": 79920,
+    "testing_records": 19980,
+    "features": 100,
+    "categories": [
+        "Energy",
+        "Health",
+        "Market/Stocks",
+        "Other",
+        "Politics",
+        "Technology"
+    ],
+    "time_budget_minutes": 10,
+    "max_eval_time_minutes": 2,
+    "population_size": 10,
+    "cv_folds": 3,
+    "scoring": "f1_macro",
+    "random_state": 42,
+    "optimization_time_seconds": 672.61
+}

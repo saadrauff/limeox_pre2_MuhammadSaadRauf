@@ -1,0 +1,5 @@
+,Model,Accuracy,AUC,Recall,Prec.,F1,Kappa,MCC,TT (Sec)
+et,Extra Trees Classifier,0.8293,0.9342,0.8293,0.824,0.8109,0.6331,0.6372,3.4533
+rf,Random Forest Classifier,0.8297,0.9328,0.8297,0.8235,0.8108,0.6326,0.637,15.8
+lr,Logistic Regression,0.8267,0.0,0.8267,0.8069,0.8103,0.6332,0.6358,2.0967
+dt,Decision Tree Classifier,0.7394,0.7547,0.7394,0.7432,0.7412,0.48,0.48,6.1

@@ -1,0 +1,86 @@
+=================================================================
+TASK 12 - FINAL AUTOML COMPARISON SUMMARY
+=================================================================
+
+Libraries loaded: 6 / 6
+
+ACCURACY RANKING
+-----------------------------------------------------------------
+1. AutoGluon: 0.867367
+2. FLAML: 0.864314
+3. LazyPredict: 0.851151
+4. H2O AutoML: 0.845145
+5. PyCaret: 0.833984
+6. TPOT: 0.824775
+
+
+COMPLETE METRICS
+-----------------------------------------------------------------
+
+Library: AutoGluon
+Accuracy: 0.867367
+Precision_Macro: 0.710968
+Recall_Macro: 0.556687
+F1_Macro: 0.602712
+F1_Weighted: 0.860607
+Precision: Not available
+Recall: Not available
+F1_Score: Not available
+
+Library: FLAML
+Accuracy: 0.864314
+Precision_Macro: Not available
+Recall_Macro: Not available
+F1_Macro: 0.592185
+F1_Weighted: Not available
+Precision: 0.730019
+Recall: 0.537137
+F1_Score: Not available
+
+Library: LazyPredict
+Accuracy: 0.851151
+Precision_Macro: 0.688709
+Recall_Macro: 0.502460
+F1_Macro: 0.554840
+F1_Weighted: 0.841865
+Precision: Not available
+Recall: Not available
+F1_Score: Not available
+
+Library: H2O AutoML
+Accuracy: 0.845145
+Precision_Macro: Not available
+Recall_Macro: Not available
+F1_Macro: Not available
+F1_Weighted: 0.836917
+Precision: Not available
+Recall: Not available
+F1_Score: Not available
+
+Library: PyCaret
+Accuracy: 0.833984
+Precision_Macro: 0.777730
+Recall_Macro: 0.408708
+F1_Macro: 0.464808
+F1_Weighted: 0.816250
+Precision: Not available
+Recall: Not available
+F1_Score: Not available
+
+Library: TPOT
+Accuracy: 0.824775
+Precision_Macro: Not available
+Recall_Macro: Not available
+F1_Macro: 0.443717
+F1_Weighted: 0.807070
+Precision: 0.714098
+Recall: 0.396357
+F1_Score: Not available
+
+
+NOTES
+-----------------------------------------------------------------
+1. Accuracy ranking uses the common Accuracy metric.
+2. Missing metrics are left blank, not replaced with zero.
+3. Generic Precision, Recall and F1 scores are kept separate from Macro and Weighted metrics.
+4. This script reads saved results only; it does not train any model again.

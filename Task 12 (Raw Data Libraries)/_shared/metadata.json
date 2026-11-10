@@ -1,0 +1,50 @@
+{
+    "dataset": "C:\\Users\\muham\\OneDrive\\Desktop\\WebScraping\\Task 5 (Categorization)\\news_categorized.csv",
+    "original_records": 99900,
+    "accepted_records": 99900,
+    "used_records": 99900,
+    "unused_accepted_records": 0,
+    "filter": "validation_disposition == ACCEPT",
+    "text_columns": [
+        "title_clean",
+        "content_clean"
+    ],
+    "target_column": "category",
+    "split_method": "Stratified train_test_split",
+    "train_ratio": 0.8,
+    "test_ratio": 0.2,
+    "random_state": 42,
+    "train_size": 79920,
+    "test_size": 19980,
+    "tfidf_max_features": 12000,
+    "tfidf_ngram_range": [
+        1,
+        2
+    ],
+    "svd_components": 100,
+    "train_shape": [
+        79920,
+        100
+    ],
+    "test_shape": [
+        19980,
+        100
+    ],
+    "categories": [
+        "Energy",
+        "Health",
+        "Market/Stocks",
+        "Other",
+        "Politics",
+        "Technology"
+    ],
+    "category_distribution": {
+        "Technology": 65974,
+        "Other": 25274,
+        "Health": 3198,
+        "Politics": 2705,
+        "Market/Stocks": 1493,
+        "Energy": 1256
+    },
+    "explained_variance_ratio": 0.26035138964653015
+}
