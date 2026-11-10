@@ -1,0 +1,16 @@
+{
+    "library": "H2O AutoML",
+    "best_model": "DeepLearning_grid_1_AutoML_1_20261110_13835_model_1",
+    "accuracy": 0.8451451451451452,
+    "precision_weighted": 0.8406071323069796,
+    "recall_weighted": 0.8451451451451452,
+    "f1_weighted": 0.8369167909858287,
+    "training_time_seconds": 458.38,
+    "max_runtime_seconds": 600,
+    "max_models": 12,
+    "training_records": 79920,
+    "testing_records": 19980,
+    "number_of_features": 100,
+    "number_of_classes": 6,
+    "best_validation_mean_per_class_error": 0.4948167854574956
+}

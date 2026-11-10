@@ -1,0 +1,2 @@
+Library,Best_Model,Accuracy,Macro_Precision,Macro_Recall,Macro_F1,Weighted_F1,Training_Records,Testing_Records,Total_Records,Execution_Time_Seconds
+AutoGluon,WeightedEnsemble_L2,0.8673673673673674,0.7109684153089919,0.5566871245537891,0.6027123809692472,0.8606072122870585,79920,19980,99900,622.0406284332275

@@ -1,0 +1,13 @@
+{
+    "Library": "LazyPredict",
+    "Best_Model": "LGBMClassifier",
+    "Accuracy": 0.8511511511511511,
+    "Macro_Precision": 0.6887094418636136,
+    "Macro_Recall": 0.5024600427215714,
+    "Macro_F1": 0.5548396655022999,
+    "Weighted_F1": 0.8418647049089341,
+    "Training_Records": 79920,
+    "Testing_Records": 19980,
+    "Total_Records": 99900,
+    "Execution_Time_Seconds": 988.1085767745972
+}

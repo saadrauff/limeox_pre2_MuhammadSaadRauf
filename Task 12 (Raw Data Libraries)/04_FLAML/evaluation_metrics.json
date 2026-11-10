@@ -1,0 +1,9 @@
+{
+    "Library": "FLAML",
+    "Best Estimator": "lgbm",
+    "Accuracy": 0.8643143143143143,
+    "Precision": 0.7300186499496394,
+    "Recall": 0.5371374154912448,
+    "Macro F1": 0.5921846657624932,
+    "Training Time (seconds)": 785.4261517524719
+}
