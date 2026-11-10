@@ -1,0 +1,21 @@
+{
+    "library": "FLAML",
+    "best_estimator": "lgbm",
+    "best_config": {
+        "n_estimators": 6450,
+        "num_leaves": 4,
+        "min_child_samples": 45,
+        "learning_rate": 0.14834305986929777,
+        "log_max_bin": 9,
+        "colsample_bytree": 0.7937838876066656,
+        "reg_alpha": 3.2573687354441763,
+        "reg_lambda": 0.13918791251037574
+    },
+    "best_validation_loss": 0.4211628686536927,
+    "training_time_seconds": 785.43,
+    "training_records": 79920,
+    "testing_records": 19980,
+    "features": 100,
+    "time_budget_seconds": 600,
+    "random_state": 42
+}

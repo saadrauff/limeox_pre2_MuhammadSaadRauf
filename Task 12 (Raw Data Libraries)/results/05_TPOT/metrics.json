@@ -1,0 +1,23 @@
+{
+    "library": "TPOT",
+    "accuracy": 0.5728228228228228,
+    "precision_macro": 0.33135116127299247,
+    "recall_macro": 0.43135948059400314,
+    "f1_macro": 0.3204066276917333,
+    "precision_weighted": 0.8001671600554889,
+    "recall_weighted": 0.5728228228228228,
+    "f1_weighted": 0.6334344831977383,
+    "training_time_seconds": 608.9,
+    "training_time_minutes": 10.15,
+    "number_of_categories": 6,
+    "categories": [
+        "Energy",
+        "Health",
+        "Market/Stocks",
+        "Other",
+        "Politics",
+        "Technology"
+    ],
+    "training_records": 79920,
+    "testing_records": 19980
+}

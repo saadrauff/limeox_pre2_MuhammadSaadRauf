@@ -1,0 +1,13 @@
+{
+    "Library": "PyCaret",
+    "Accuracy": 0.833983983983984,
+    "Macro Precision": 0.7777304972928959,
+    "Macro Recall": 0.40870827179455826,
+    "Macro F1": 0.464808116950783,
+    "Weighted F1": 0.8162502036017374,
+    "Best Estimator": "ExtraTreesClassifier",
+    "Setup Time (seconds)": 1.5,
+    "Comparison Time (seconds)": 89.76,
+    "Prediction Time (seconds)": 0.23,
+    "Total Execution Time (seconds)": 92.45
+}
