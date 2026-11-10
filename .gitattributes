@@ -16,3 +16,4 @@ Task[[:space:]]8[[:space:]](Feature[[:space:]]Engineering)/**/*.pkl filter=lfs d
 Task[[:space:]]8[[:space:]](Feature[[:space:]]Engineering)/**/*.csv filter=lfs diff=lfs merge=lfs -text
 *.pkl filter=lfs diff=lfs merge=lfs -text
 *.joblib filter=lfs diff=lfs merge=lfs -text
+Task[[:space:]]11[[:space:]](Libraries)/** filter=lfs diff=lfs merge=lfs -text
