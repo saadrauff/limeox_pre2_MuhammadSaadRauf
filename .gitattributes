@@ -12,3 +12,5 @@ Task[[:space:]]5[[:space:]](Categorization)/Excel[[:space:]]Categorization.xlsx 
 Task[[:space:]]12[[:space:]](Raw[[:space:]]Data[[:space:]]Libraries)/**/*.pkl filter=lfs diff=lfs merge=lfs -text
 Task[[:space:]]12[[:space:]](Raw[[:space:]]Data[[:space:]]Libraries)/**/*.joblib filter=lfs diff=lfs merge=lfs -text
 Task[[:space:]]12[[:space:]](Raw[[:space:]]Data[[:space:]]Libraries)/**/*.npz filter=lfs diff=lfs merge=lfs -text
+Task[[:space:]]8[[:space:]](Feature[[:space:]]Engineering)/**/*.pkl filter=lfs diff=lfs merge=lfs -text
+Task[[:space:]]8[[:space:]](Feature[[:space:]]Engineering)/**/*.csv filter=lfs diff=lfs merge=lfs -text
