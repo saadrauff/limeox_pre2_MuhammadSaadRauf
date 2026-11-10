@@ -1,0 +1,10 @@
+{
+    "library": "H2O AutoML",
+    "best_model_id": "DeepLearning_grid_1_AutoML_1_20261110_13835_model_1",
+    "algorithm": "deeplearning",
+    "model_path": "C:\\Users\\muham\\OneDrive\\Desktop\\WebScraping\\Task 12 (Raw Data Libraries)\\07_H2O_AutoML\\DeepLearning_grid_1_AutoML_1_20261110_13835_model_1",
+    "training_time_seconds": 458.38,
+    "max_runtime_seconds": 600,
+    "max_models": 12,
+    "seed": 42
+}

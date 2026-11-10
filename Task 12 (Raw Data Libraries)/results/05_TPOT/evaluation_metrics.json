@@ -1,0 +1,26 @@
+{
+    "Library": "TPOT",
+    "Search Space": "linear",
+    "Best Pipeline": "Pipeline(steps=[('standardscaler', StandardScaler()),\n                ('selectpercentile',\n                 SelectPercentile(percentile=37.1143747020325)),\n                ('featureunion-1',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('featureunion-2',\n                 FeatureUnion(transformer_list=[('skiptransformer',\n                                                 SkipTransformer()),\n                                                ('passthrough',\n                                                 Passthrough())])),\n                ('baggingclassifier',\n                 BaggingClassifier(bootstrap=np.False_,\n                                   bootstrap_features=np.False_,\n                                   max_features=0.595178233874,\n                                   max_samples=0.3781027783537, n_estimators=40,\n                                   n_jobs=1, random_state=42))])",
+    "Accuracy": 0.8247747747747748,
+    "Precision": 0.7140984876041152,
+    "Recall": 0.3963569957957371,
+    "Macro F1": 0.4437171733425207,
+    "Weighted Precision": 0.8168413173120013,
+    "Weighted Recall": 0.8247747747747748,
+    "Weighted F1": 0.807069555517667,
+    "Training Time (seconds)": 672.61,
+    "Training Time (minutes)": 11.21,
+    "Training Records": 79920,
+    "Testing Records": 19980,
+    "Features": 100,
+    "Categories": [
+        "Energy",
+        "Health",
+        "Market/Stocks",
+        "Other",
+        "Politics",
+        "Technology"
+    ],
+    "Number of Categories": 6
+}

@@ -1,0 +1,13 @@
+{
+    "Library": "AutoGluon",
+    "Best_Model": "WeightedEnsemble_L2",
+    "Accuracy": 0.8673673673673674,
+    "Macro_Precision": 0.7109684153089919,
+    "Macro_Recall": 0.5566871245537891,
+    "Macro_F1": 0.6027123809692472,
+    "Weighted_F1": 0.8606072122870585,
+    "Training_Records": 79920,
+    "Testing_Records": 19980,
+    "Total_Records": 99900,
+    "Execution_Time_Seconds": 622.0406284332275
+}

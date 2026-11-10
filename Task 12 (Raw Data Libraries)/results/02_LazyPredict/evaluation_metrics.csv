@@ -1,0 +1,2 @@
+Library,Best_Model,Accuracy,Macro_Precision,Macro_Recall,Macro_F1,Weighted_F1,Training_Records,Testing_Records,Total_Records,Execution_Time_Seconds
+LazyPredict,LGBMClassifier,0.8511511511511511,0.6887094418636136,0.5024600427215714,0.5548396655022999,0.8418647049089341,79920,19980,99900,988.1085767745972

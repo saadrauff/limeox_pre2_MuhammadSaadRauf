@@ -9,3 +9,6 @@ Task[[:space:]]4[[:space:]](Validation)/validation_output/news_validation_all.cs
 Task[[:space:]]5[[:space:]](Categorization)/Categorized[[:space:]]Data[[:space:]]Excel[[:space:]]File.xlsx filter=lfs diff=lfs merge=lfs -text
 Task[[:space:]]5[[:space:]](Categorization)/news_categorized.csv filter=lfs diff=lfs merge=lfs -text
 Task[[:space:]]5[[:space:]](Categorization)/Excel[[:space:]]Categorization.xlsx filter=lfs diff=lfs merge=lfs -text
+Task[[:space:]]12[[:space:]](Raw[[:space:]]Data[[:space:]]Libraries)/**/*.pkl filter=lfs diff=lfs merge=lfs -text
+Task[[:space:]]12[[:space:]](Raw[[:space:]]Data[[:space:]]Libraries)/**/*.joblib filter=lfs diff=lfs merge=lfs -text
+Task[[:space:]]12[[:space:]](Raw[[:space:]]Data[[:space:]]Libraries)/**/*.npz filter=lfs diff=lfs merge=lfs -text

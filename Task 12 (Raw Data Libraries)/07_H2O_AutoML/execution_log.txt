@@ -1,0 +1,25 @@
+
+TASK 12 - H2O AUTOML EXECUTION LOG
+
+Library: H2O AutoML
+
+Best Model: DeepLearning_grid_1_AutoML_1_20261110_13835_model_1
+Algorithm: deeplearning
+
+Training Records: 79920
+Testing Records: 19980
+Features: 100
+Classes: 6
+
+Training Time: 458.38 seconds
+Total Execution Time: 495.38 seconds
+
+Accuracy: 0.845145
+Precision: 0.840607
+Recall: 0.845145
+F1 Score: 0.836917
+
+Maximum Runtime: 600 seconds
+Maximum Models: 12
+
+Execution Status: SUCCESS

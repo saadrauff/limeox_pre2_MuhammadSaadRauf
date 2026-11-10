@@ -1,0 +1,5 @@
+Library,Status,Metric_Source,Accuracy,Precision_Macro,Recall_Macro,F1_Macro,F1_Weighted,Accuracy_Rank,Precision_Macro_Rank,Recall_Macro_Rank,F1_Macro_Rank,F1_Weighted_Rank,Average_Metric_Rank,Overall_Rank
+AutoGluon,Evaluated,results\03_AutoGluon\evaluation_metrics.json,0.8673673673673674,0.7109684153089919,0.5566871245537891,0.6027123809692472,0.8606072122870585,1.0,2.0,1.0,1.0,1.0,1.2,1.0
+LazyPredict,Evaluated,results\02_LazyPredict\evaluation_metrics.json,0.8511511511511511,0.6887094418636136,0.5024600427215714,0.5548396655022999,0.8418647049089341,2.0,3.0,2.0,2.0,2.0,2.2,2.0
+PyCaret,Evaluated,results\06_PyCaret\evaluation_metrics.json,0.833983983983984,0.7777304972928959,0.40870827179455826,0.464808116950783,0.8162502036017374,3.0,1.0,3.0,3.0,3.0,2.6,3.0
+TPOT,Evaluated,results\05_TPOT\evaluation_metrics.json,0.8247747747747748,,,0.4437171733425207,0.807069555517667,,,,,,,
