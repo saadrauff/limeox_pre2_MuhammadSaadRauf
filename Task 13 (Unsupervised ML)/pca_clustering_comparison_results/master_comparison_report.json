@@ -1,0 +1,141 @@
+{
+    "generated_at": "2026-11-11T16:22:28.362912",
+    "project": "PCA-Based Unsupervised Learning Comparison",
+    "pca_information": {
+        "total_records": 99900,
+        "original_features": 25,
+        "pca_components": 17,
+        "explained_variance_percent": 95.54835667169901,
+        "variance_lost_percent": 4.451643328300989
+    },
+    "clustering_results": [
+        {
+            "Algorithm": "K-Means",
+            "Total_Records": 99900,
+            "Records_Processed": 99900,
+            "Coverage_Percent": 100.0,
+            "PCA_Features": 17,
+            "Clusters": 10,
+            "Noise_Points": 0,
+            "Noise_Percent": 0.0,
+            "Silhouette": 0.1441,
+            "Davies_Bouldin": 1.632,
+            "Calinski_Harabasz": 9042.2859,
+            "Evaluation": "Random sample of 3000"
+        },
+        {
+            "Algorithm": "DBSCAN",
+            "Total_Records": 99900,
+            "Records_Processed": 99900,
+            "Coverage_Percent": 100.0,
+            "PCA_Features": 17,
+            "Clusters": 14,
+            "Noise_Points": 2634,
+            "Noise_Percent": 2.6366366366366365,
+            "Silhouette": 0.19484281520234442,
+            "Davies_Bouldin": 1.2246586903108652,
+            "Calinski_Harabasz": 81.35062639886864,
+            "Evaluation": "Random sample of non-noise records"
+        },
+        {
+            "Algorithm": "Hierarchical",
+            "Total_Records": 99900,
+            "Records_Processed": 5000,
+            "Coverage_Percent": 5.005005005005005,
+            "PCA_Features": 17,
+            "Clusters": 5,
+            "Noise_Points": 0,
+            "Noise_Percent": 0.0,
+            "Silhouette": 0.11064685826515934,
+            "Davies_Bouldin": 1.928109924459911,
+            "Calinski_Harabasz": 245.61601405499482,
+            "Evaluation": "Random sample of 3000"
+        }
+    ],
+    "metric_rankings": [
+        {
+            "Algorithm": "K-Means",
+            "Silhouette": 0.1441,
+            "Davies_Bouldin": 1.632,
+            "Calinski_Harabasz": 9042.2859,
+            "Silhouette_Rank": 2.0,
+            "Davies_Bouldin_Rank": 2.0,
+            "Calinski_Harabasz_Rank": 1.0
+        },
+        {
+            "Algorithm": "DBSCAN",
+            "Silhouette": 0.19484281520234442,
+            "Davies_Bouldin": 1.2246586903108652,
+            "Calinski_Harabasz": 81.35062639886864,
+            "Silhouette_Rank": 1.0,
+            "Davies_Bouldin_Rank": 1.0,
+            "Calinski_Harabasz_Rank": 3.0
+        },
+        {
+            "Algorithm": "Hierarchical",
+            "Silhouette": 0.11064685826515934,
+            "Davies_Bouldin": 1.928109924459911,
+            "Calinski_Harabasz": 245.61601405499482,
+            "Silhouette_Rank": 3.0,
+            "Davies_Bouldin_Rank": 3.0,
+            "Calinski_Harabasz_Rank": 2.0
+        }
+    ],
+    "cluster_distributions": {
+        "K-Means": {
+            "Cluster 0": 10950,
+            "Cluster 1": 15512,
+            "Cluster 2": 6917,
+            "Cluster 3": 20114,
+            "Cluster 4": 16265,
+            "Cluster 5": 16812,
+            "Cluster 6": 526,
+            "Cluster 7": 944,
+            "Cluster 8": 4750,
+            "Cluster 9": 7110
+        },
+        "DBSCAN": {
+            "Noise": 2634,
+            "Cluster 0": 84446,
+            "Cluster 1": 6546,
+            "Cluster 2": 492,
+            "Cluster 3": 5046,
+            "Cluster 4": 582,
+            "Cluster 5": 37,
+            "Cluster 6": 11,
+            "Cluster 7": 10,
+            "Cluster 8": 17,
+            "Cluster 9": 31,
+            "Cluster 10": 13,
+            "Cluster 11": 13,
+            "Cluster 12": 11,
+            "Cluster 13": 11
+        },
+        "Hierarchical": {
+            "Cluster 0": 1077,
+            "Cluster 1": 1160,
+            "Cluster 2": 385,
+            "Cluster 3": 54,
+            "Cluster 4": 2324
+        }
+    },
+    "observations": [
+        "PCA reduced 25 features to 17 components.",
+        "PCA retained 95.5484% of the original variance.",
+        "DBSCAN achieved the highest reported Silhouette Score.",
+        "DBSCAN achieved the lowest reported Davies-Bouldin Index.",
+        "K-Means achieved the highest reported Calinski-Harabasz Score.",
+        "DBSCAN identified 2634 noise records.",
+        "Hierarchical clustering processed 5000 out of 99900 records.",
+        "K-Means and DBSCAN processed the complete dataset.",
+        "The evaluation procedures differ, so the metric rankings are preliminary rather than a fully controlled comparison."
+    ],
+    "limitations": [
+        "K-Means metrics use a random sample.",
+        "DBSCAN metrics exclude noise records.",
+        "Hierarchical clustering processes only 5000 records.",
+        "Evaluation sample sizes and procedures differ.",
+        "Cluster labels are algorithm-specific.",
+        "A common evaluation sample is needed for a fair comparison."
+    ]
+}
