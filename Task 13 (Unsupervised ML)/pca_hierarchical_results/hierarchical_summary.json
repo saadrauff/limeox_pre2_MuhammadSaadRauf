@@ -1,0 +1,52 @@
+{
+    "execution_date": "2026-11-11T16:17:03.580900",
+    "algorithm": "Agglomerative Hierarchical Clustering",
+    "input_dataset": "C:\\Users\\muham\\OneDrive\\Desktop\\WebScraping\\Task 13 (Unsupervised ML)\\pca_results\\pca_transformed_dataset.csv",
+    "original_total_records": 99900,
+    "total_pca_features": 17,
+    "pca_features": [
+        "PC1",
+        "PC2",
+        "PC3",
+        "PC4",
+        "PC5",
+        "PC6",
+        "PC7",
+        "PC8",
+        "PC9",
+        "PC10",
+        "PC11",
+        "PC12",
+        "PC13",
+        "PC14",
+        "PC15",
+        "PC16",
+        "PC17"
+    ],
+    "method": "Agglomerative Clustering",
+    "parameters": {
+        "n_clusters": 5,
+        "linkage": "ward",
+        "metric": "euclidean"
+    },
+    "processing": {
+        "processing_method": "Random sample",
+        "sample_size": 5000,
+        "percentage_of_dataset": 5.005
+    },
+    "cluster_distribution": {
+        "0": 1077,
+        "1": 1160,
+        "2": 385,
+        "3": 54,
+        "4": 2324
+    },
+    "evaluation_metrics": {
+        "silhouette_score": 0.11064685826515934,
+        "davies_bouldin_index": 1.928109924459911,
+        "calinski_harabasz_score": 245.61601405499482,
+        "evaluation_sample_size": 3000
+    },
+    "model_fitted_on": "Random sample only",
+    "full_dataset_cluster_labels_generated": false
+}

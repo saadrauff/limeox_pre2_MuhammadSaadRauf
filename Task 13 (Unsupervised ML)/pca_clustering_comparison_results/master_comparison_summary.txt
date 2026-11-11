@@ -1,0 +1,80 @@
+======================================================================
+PCA CLUSTERING COMPARISON REPORT
+======================================================================
+
+PCA INFORMATION
+----------------------------------------------------------------------
+total_records: 99900
+original_features: 25
+pca_components: 17
+explained_variance_percent: 95.54835667169901
+variance_lost_percent: 4.451643328300989
+
+CLUSTERING COMPARISON
+----------------------------------------------------------------------
+   Algorithm  Total_Records  Records_Processed  Coverage_Percent  PCA_Features  Clusters  Noise_Points  Noise_Percent  Silhouette  Davies_Bouldin  Calinski_Harabasz                         Evaluation
+     K-Means          99900              99900        100.000000            17        10             0       0.000000    0.144100        1.632000        9042.285900              Random sample of 3000
+      DBSCAN          99900              99900        100.000000            17        14          2634       2.636637    0.194843        1.224659          81.350626 Random sample of non-noise records
+Hierarchical          99900               5000          5.005005            17         5             0       0.000000    0.110647        1.928110         245.616014              Random sample of 3000
+
+METRIC RANKINGS
+----------------------------------------------------------------------
+   Algorithm  Silhouette  Davies_Bouldin  Calinski_Harabasz  Silhouette_Rank  Davies_Bouldin_Rank  Calinski_Harabasz_Rank
+     K-Means    0.144100        1.632000        9042.285900              2.0                  2.0                     1.0
+      DBSCAN    0.194843        1.224659          81.350626              1.0                  1.0                     3.0
+Hierarchical    0.110647        1.928110         245.616014              3.0                  3.0                     2.0
+
+CLUSTER DISTRIBUTION
+----------------------------------------------------------------------
+   Algorithm    Cluster  Article_Count
+     K-Means  Cluster 0          10950
+     K-Means  Cluster 1          15512
+     K-Means  Cluster 2           6917
+     K-Means  Cluster 3          20114
+     K-Means  Cluster 4          16265
+     K-Means  Cluster 5          16812
+     K-Means  Cluster 6            526
+     K-Means  Cluster 7            944
+     K-Means  Cluster 8           4750
+     K-Means  Cluster 9           7110
+      DBSCAN      Noise           2634
+      DBSCAN  Cluster 0          84446
+      DBSCAN  Cluster 1           6546
+      DBSCAN  Cluster 2            492
+      DBSCAN  Cluster 3           5046
+      DBSCAN  Cluster 4            582
+      DBSCAN  Cluster 5             37
+      DBSCAN  Cluster 6             11
+      DBSCAN  Cluster 7             10
+      DBSCAN  Cluster 8             17
+      DBSCAN  Cluster 9             31
+      DBSCAN Cluster 10             13
+      DBSCAN Cluster 11             13
+      DBSCAN Cluster 12             11
+      DBSCAN Cluster 13             11
+Hierarchical  Cluster 0           1077
+Hierarchical  Cluster 1           1160
+Hierarchical  Cluster 2            385
+Hierarchical  Cluster 3             54
+Hierarchical  Cluster 4           2324
+
+RESEARCH OBSERVATIONS
+----------------------------------------------------------------------
+1. PCA reduced 25 features to 17 components.
+2. PCA retained 95.5484% of the original variance.
+3. DBSCAN achieved the highest reported Silhouette Score.
+4. DBSCAN achieved the lowest reported Davies-Bouldin Index.
+5. K-Means achieved the highest reported Calinski-Harabasz Score.
+6. DBSCAN identified 2634 noise records.
+7. Hierarchical clustering processed 5000 out of 99900 records.
+8. K-Means and DBSCAN processed the complete dataset.
+9. The evaluation procedures differ, so the metric rankings are preliminary rather than a fully controlled comparison.
+
+RESEARCH LIMITATIONS
+----------------------------------------------------------------------
+- K-Means metrics use a random sample.
+- DBSCAN metrics exclude noise records.
+- Hierarchical clustering processes only 5000 records.
+- Evaluation sample sizes and procedures differ.
+- Cluster labels are algorithm-specific.
+- A common evaluation sample is needed for a fair comparison.

@@ -1,0 +1,174 @@
+{
+    "execution_information": {
+        "execution_date": "2026-11-11 14:52:28",
+        "task": "Task 13 - Unsupervised Machine Learning",
+        "technique": "Principal Component Analysis (PCA)"
+    },
+    "dataset_information": {
+        "input_dataset": "C:\\Users\\muham\\OneDrive\\Desktop\\WebScraping\\Task 8 (Feature Engineering)\\news_engineered_features.csv",
+        "total_articles": 99900,
+        "original_dataset_rows": 99900,
+        "original_dataset_columns": 33,
+        "selected_numerical_features": 25,
+        "feature_names": [
+            "title_char_count",
+            "title_word_count",
+            "title_avg_word_length",
+            "title_digit_count",
+            "title_uppercase_ratio",
+            "title_exclamation_count",
+            "title_question_count",
+            "title_unique_word_ratio",
+            "body_char_count",
+            "body_word_count",
+            "body_sentence_count",
+            "body_avg_sentence_length",
+            "body_unique_word_ratio",
+            "financial_keyword_count",
+            "url_length",
+            "url_path_depth",
+            "url_slug_length",
+            "published_year",
+            "published_month",
+            "published_dayofweek",
+            "published_is_weekend",
+            "published_day_sin",
+            "published_day_cos",
+            "title_body_length_ratio",
+            "financial_keyword_density"
+        ],
+        "metadata_columns": [
+            "url",
+            "category"
+        ]
+    },
+    "preprocessing": {
+        "missing_values_before": 850,
+        "missing_values_after": 0,
+        "missing_value_strategy": "Median Imputation",
+        "scaling_method": "StandardScaler",
+        "imputed_shape": [
+            99900,
+            25
+        ],
+        "scaled_shape": [
+            99900,
+            25
+        ]
+    },
+    "pca_configuration": {
+        "algorithm": "Principal Component Analysis",
+        "variance_threshold": 0.95,
+        "solver": "full",
+        "random_state": 42,
+        "original_dimensions": 25,
+        "reduced_dimensions": 17
+    },
+    "pca_results": {
+        "total_articles_processed": 99900,
+        "original_features": 25,
+        "final_components": 17,
+        "total_explained_variance_percentage": 95.5484,
+        "variance_lost_percentage": 4.4516,
+        "dimensionality_reduction_percentage": 32.0,
+        "transformed_dataset_shape": [
+            99900,
+            19
+        ],
+        "component_wise_variance": [
+            {
+                "component": "PC1",
+                "explained_variance_percentage": 17.6177,
+                "cumulative_variance_percentage": 17.6177
+            },
+            {
+                "component": "PC2",
+                "explained_variance_percentage": 13.7906,
+                "cumulative_variance_percentage": 31.4083
+            },
+            {
+                "component": "PC3",
+                "explained_variance_percentage": 9.7862,
+                "cumulative_variance_percentage": 41.1945
+            },
+            {
+                "component": "PC4",
+                "explained_variance_percentage": 6.7089,
+                "cumulative_variance_percentage": 47.9034
+            },
+            {
+                "component": "PC5",
+                "explained_variance_percentage": 6.4794,
+                "cumulative_variance_percentage": 54.3828
+            },
+            {
+                "component": "PC6",
+                "explained_variance_percentage": 5.8425,
+                "cumulative_variance_percentage": 60.2253
+            },
+            {
+                "component": "PC7",
+                "explained_variance_percentage": 4.6191,
+                "cumulative_variance_percentage": 64.8444
+            },
+            {
+                "component": "PC8",
+                "explained_variance_percentage": 4.2652,
+                "cumulative_variance_percentage": 69.1096
+            },
+            {
+                "component": "PC9",
+                "explained_variance_percentage": 3.9606,
+                "cumulative_variance_percentage": 73.0702
+            },
+            {
+                "component": "PC10",
+                "explained_variance_percentage": 3.8798,
+                "cumulative_variance_percentage": 76.95
+            },
+            {
+                "component": "PC11",
+                "explained_variance_percentage": 3.6802,
+                "cumulative_variance_percentage": 80.6302
+            },
+            {
+                "component": "PC12",
+                "explained_variance_percentage": 3.2469,
+                "cumulative_variance_percentage": 83.8771
+            },
+            {
+                "component": "PC13",
+                "explained_variance_percentage": 2.9441,
+                "cumulative_variance_percentage": 86.8212
+            },
+            {
+                "component": "PC14",
+                "explained_variance_percentage": 2.5604,
+                "cumulative_variance_percentage": 89.3817
+            },
+            {
+                "component": "PC15",
+                "explained_variance_percentage": 2.5131,
+                "cumulative_variance_percentage": 91.8948
+            },
+            {
+                "component": "PC16",
+                "explained_variance_percentage": 1.9777,
+                "cumulative_variance_percentage": 93.8724
+            },
+            {
+                "component": "PC17",
+                "explained_variance_percentage": 1.6759,
+                "cumulative_variance_percentage": 95.5484
+            }
+        ]
+    },
+    "output_files": {
+        "transformed_dataset": "pca_transformed_dataset.csv",
+        "explained_variance_report": "pca_explained_variance.csv",
+        "trained_pca_model": "pca_model.pkl",
+        "visualization": "pca_visualization.png",
+        "summary_text": "pca_summary.txt",
+        "summary_json": "pca_summary.json"
+    }
+}
