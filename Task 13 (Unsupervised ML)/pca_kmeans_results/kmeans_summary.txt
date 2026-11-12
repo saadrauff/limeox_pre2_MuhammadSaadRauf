@@ -1,0 +1,37 @@
+=================================================================
+PCA K-MEANS CLUSTERING SUMMARY
+=================================================================
+
+Execution Date: 2026-11-11T14:56:16.168964
+Total Records: 99900
+PCA Features: 17
+Selected K: 10
+Final Fit: Complete Dataset
+
+K EVALUATION:
+K=2 | Inertia=215831.4771 | Silhouette=0.1312
+K=3 | Inertia=199816.3707 | Silhouette=0.1260
+K=4 | Inertia=186641.9675 | Silhouette=0.1445
+K=5 | Inertia=175011.9244 | Silhouette=0.1426
+K=6 | Inertia=162845.9791 | Silhouette=0.1434
+K=7 | Inertia=154456.9302 | Silhouette=0.1302
+K=8 | Inertia=147322.2943 | Silhouette=0.1352
+K=9 | Inertia=142282.4345 | Silhouette=0.1256
+K=10 | Inertia=132766.6997 | Silhouette=0.1605
+
+CLUSTER DISTRIBUTION:
+Cluster 0: 10950
+Cluster 1: 15512
+Cluster 2: 6917
+Cluster 3: 20114
+Cluster 4: 16265
+Cluster 5: 16812
+Cluster 6: 526
+Cluster 7: 944
+Cluster 8: 4750
+Cluster 9: 7110
+
+FINAL EVALUATION:
+Silhouette Score: 0.1441
+Davies-Bouldin Index: 1.6320
+Calinski-Harabasz Score: 9042.2859

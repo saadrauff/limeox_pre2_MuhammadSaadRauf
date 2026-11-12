@@ -1,0 +1,4 @@
+Algorithm,Total_Records,Records_Processed,Coverage_Percent,PCA_Features,Clusters,Noise_Points,Noise_Percent,Silhouette,Davies_Bouldin,Calinski_Harabasz,Evaluation,Method
+K-Means,99900,99900,100.0,17,10,0,0.0,0.1441,1.632,9042.2859,Random sample of 3000,Standard K-Means
+DBSCAN,99900,99900,100.0,17,14,2634,2.6366366366366365,0.19484281520234442,1.2246586903108652,81.35062639886864,Random sample of non-noise records,DBSCAN
+Hierarchical,99900,99900,100.0,17,5,0,0.0,0.10378398524069439,1.989904015861113,218.89604564441368,Random sample of 3000,KNN Connectivity + Ward Linkage

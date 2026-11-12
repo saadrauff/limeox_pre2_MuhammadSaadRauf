@@ -1,0 +1,105 @@
+{
+    "execution_date": "2026-11-11T14:56:16.168964",
+    "algorithm": "K-Means Clustering",
+    "input_dataset": "C:\\Users\\muham\\OneDrive\\Desktop\\WebScraping\\Task 13 (Unsupervised ML)\\pca_results\\pca_transformed_dataset.csv",
+    "total_records": 99900,
+    "pca_features": [
+        "PC1",
+        "PC2",
+        "PC3",
+        "PC4",
+        "PC5",
+        "PC6",
+        "PC7",
+        "PC8",
+        "PC9",
+        "PC10",
+        "PC11",
+        "PC12",
+        "PC13",
+        "PC14",
+        "PC15",
+        "PC16",
+        "PC17"
+    ],
+    "number_of_pca_features": 17,
+    "k_selection_range": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+    ],
+    "k_selection_sample_size": 10000,
+    "silhouette_sample_size": 3000,
+    "selected_k": 10,
+    "final_model_fitted_on": "Complete dataset",
+    "cluster_distribution": {
+        "0": 10950,
+        "1": 15512,
+        "2": 6917,
+        "3": 20114,
+        "4": 16265,
+        "5": 16812,
+        "6": 526,
+        "7": 944,
+        "8": 4750,
+        "9": 7110
+    },
+    "evaluation_metrics": {
+        "silhouette_score": 0.14407139338147834,
+        "davies_bouldin_index": 1.6319805412448027,
+        "calinski_harabasz_score": 9042.285880880076
+    },
+    "k_evaluation": [
+        {
+            "k": 2,
+            "inertia": 215831.47705953417,
+            "silhouette_score": 0.13119664968561884
+        },
+        {
+            "k": 3,
+            "inertia": 199816.3706791326,
+            "silhouette_score": 0.1260335422433628
+        },
+        {
+            "k": 4,
+            "inertia": 186641.9674842598,
+            "silhouette_score": 0.1444621621229485
+        },
+        {
+            "k": 5,
+            "inertia": 175011.92437046082,
+            "silhouette_score": 0.14256569686112436
+        },
+        {
+            "k": 6,
+            "inertia": 162845.9790658202,
+            "silhouette_score": 0.14336129805229036
+        },
+        {
+            "k": 7,
+            "inertia": 154456.93020591923,
+            "silhouette_score": 0.13017290182141814
+        },
+        {
+            "k": 8,
+            "inertia": 147322.2943015805,
+            "silhouette_score": 0.13522533663232253
+        },
+        {
+            "k": 9,
+            "inertia": 142282.43447100994,
+            "silhouette_score": 0.12564970691375982
+        },
+        {
+            "k": 10,
+            "inertia": 132766.6996804947,
+            "silhouette_score": 0.16048026314278063
+        }
+    ]
+}
