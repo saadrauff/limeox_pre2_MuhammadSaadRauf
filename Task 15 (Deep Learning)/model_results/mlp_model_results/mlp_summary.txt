@@ -1,0 +1,48 @@
+============================================================
+MODEL CONFIGURATION SUMMARY
+============================================================
+
+MODEL INFORMATION
+Model Name          : Deep Neural Network (MLP) (Multi-Layer] Perceptron)
+Task                : News Classification
+Framework           : PyTorch
+Model Type          : Feedforward Neural Network
+
+INPUT CONFIGURATION
+Input Data          : news_categorized.csv
+Input Features      : 30,000
+Feature Extraction  : TF-IDF
+N-gram Range        : (1, 2)
+Number of Classes   : 6
+
+MODEL ARCHITECTURE
+Input Layer         : 30,000
+Hidden Layer 1      : 256 neurons
+Hidden Layer 2      : 128 neurons
+Output Layer        : 6 neurons
+Activation          : ReLU
+Dropout             : 0.35
+Total Linear Layers : 3
+
+TRAINING CONFIGURATION
+Optimizer           : AdamW
+Loss Function       : Weighted Cross Entropy
+Learning Rate       : 0.001
+Weight Decay        : 0.0001
+Batch Size          : 256
+Maximum Epochs      : 12
+Early Stopping      : 3
+Scheduler           : ReduceLROnPlateau
+
+TRAINING DETAILS
+Training Samples    : 79,920
+Validation Samples  : 9,990
+Testing Samples     : 9,990
+Best Epoch          : 9
+
+FINAL TEST RESULTS
+Accuracy            : 93.12%
+Weighted F1         : 93.01%
+Macro F1            : 78.32%
+
+============================================================

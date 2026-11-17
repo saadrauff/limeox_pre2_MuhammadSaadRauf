@@ -1,0 +1,2 @@
+model,best_epoch,test_loss,accuracy,weighted_precision,weighted_recall,weighted_f1,macro_f1,training_records,validation_records,testing_records,tfidf_features,ngram_range
+TF-IDF + PyTorch Deep Neural Network (MLP),9,0.655803458354724,0.9312312312312312,0.9297180033327399,0.9312312312312312,0.9301114308659936,0.7832207173037223,79920,9990,9990,30000,"(1, 2)"

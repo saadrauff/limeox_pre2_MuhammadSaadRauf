@@ -1,0 +1,2 @@
+model,best_epoch,test_loss,accuracy,weighted_precision,weighted_recall,weighted_f1,macro_f1,training_records,validation_records,testing_records,vocabulary_size,max_sequence_length,embedding_dimension,hidden_dimension,batch_size,total_training_time_seconds
+BiLSTM,5,1.2166153292517523,0.6188188188188188,0.8135395622591566,0.6188188188188188,0.68423893438761,0.40976196333304443,79920,9990,9990,20000,100,32,32,128,934.834907099983
