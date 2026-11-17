@@ -1,0 +1,404 @@
+# TASK 16 - SOBEL OPERATOR
+## Image Processing and Edge Detection
+### Complete Project Summary
+
+============================================================
+
+## 1. PROJECT INTRODUCTION
+
+The Sobel Operator is an image processing technique used for edge detection.
+
+It identifies boundaries and edges in images by calculating changes in pixel intensity in horizontal and vertical directions.
+
+In this task, the Sobel Operator was applied to the CIFAR-10 image dataset.
+
+The experiments included:
+- Image loading and preprocessing.
+- RGB to grayscale conversion.
+- Sobel X edge detection.
+- Sobel Y edge detection.
+- Gradient magnitude calculation.
+- Kernel size comparison.
+- Stride comparison.
+- Before and after image visualization.
+- Processing time analysis.
+
+**Important:** The original news classification dataset contains text, whereas Sobel is an image processing technique. Therefore, a separate image dataset was used for this task.
+
+---
+
+## 2. DATASET INFORMATION
+
+**Dataset:** CIFAR-10
+
+**Dataset Type:** Image Classification Dataset
+
+**Source:** torchvision.datasets.CIFAR10
+
+**Dataset Details:**
+
+- Total training images: 50,000
+- Images selected for processing: 500
+- Original image dimensions: 32 × 32 pixels
+- Image format: RGB
+- Number of classes: 10
+
+CIFAR-10 Classes:
+
+1. Airplane
+2. Automobile
+3. Bird
+4. Cat
+5. Deer
+6. Dog
+7. Frog
+8. Horse
+9. Ship
+10. Truck
+
+The first 500 training images were selected for both experiments.
+
+---
+
+## 3. LIBRARIES AND TECHNOLOGIES
+
+The following Python libraries were used:
+
+| Library | Purpose |
+|---|---|
+| OpenCV | Image processing and Sobel operations |
+| NumPy | Numerical operations |
+| Matplotlib | Image visualization and comparisons |
+| PyTorch | Convolution operations with custom stride |
+| Torchvision | CIFAR-10 dataset loading |
+
+Installed library versions:
+
+- OpenCV: 5.0.0
+- Matplotlib: 3.11.2
+- PyTorch: 2.15.0+cpu
+- Torchvision: 0.29.2
+- NumPy: 2.5.4
+
+The environment used CPU processing.
+
+---
+
+## 4. EXPERIMENT 1 - BASIC SOBEL OPERATOR
+
+**Python file:** sobel_operator.py
+
+### Configuration
+
+- Dataset: CIFAR-10
+- Images processed: 500
+- Kernel size: 3 × 3
+- Original image size: 32 × 32
+- Processing method: OpenCV Sobel Operator
+
+### Processing Pipeline
+
+Original RGB Image
+       |
+       v
+Grayscale Conversion
+       |
+       v
+Sobel X
+       |
+       v
+Sobel Y
+       |
+       v
+Gradient Magnitude
+
+### Sobel X
+
+Sobel X detects intensity changes in the horizontal direction and highlights corresponding vertical edges.
+
+### Sobel Y
+
+Sobel Y detects intensity changes in the vertical direction and highlights corresponding horizontal edges.
+
+### Gradient Magnitude
+
+Gradient magnitude combines Sobel X and Sobel Y to represent the overall edge strength.
+
+Formula:
+
+G = sqrt(Gx² + Gy²)
+
+Where:
+
+- Gx = Horizontal gradient
+- Gy = Vertical gradient
+- G = Gradient magnitude
+
+### Experiment Results
+
+| Parameter | Result |
+|---|---:|
+| Total dataset images | 50,000 |
+| Images requested | 500 |
+| Successfully processed | 500 |
+| Failed images | 0 |
+| Kernel size | 3 × 3 |
+| Image dimensions | 32 × 32 |
+
+### Generated Folders
+
+sobel_results/
+
+- original/
+- grayscale/
+- sobel_x/
+- sobel_y/
+- sobel_magnitude/
+- comparisons/
+- summary.csv
+
+### Verified File Counts
+
+| Folder | Files |
+|---|---:|
+| Original | 500 |
+| Grayscale | 500 |
+| Sobel X | 500 |
+| Sobel Y | 500 |
+| Sobel Magnitude | 500 |
+| Comparisons | 12 |
+
+Total generated image files: 2,512.
+
+The comparison montages contain four visual panels per image. The gradient magnitude outputs are also saved separately.
+
+---
+
+## 5. EXPERIMENT 2 - KERNEL SIZE AND STRIDE COMPARISON
+
+**Python file:** sobel_kernel_stride_comparison.py
+
+This experiment was performed to investigate how different kernel sizes and stride values affect edge detection, output dimensions and processing time.
+
+### Kernel Sizes Tested
+
+1. 3 × 3
+2. 5 × 5
+3. 7 × 7
+
+### Stride Values Tested
+
+1. Stride 1
+2. Stride 2
+3. Stride 3
+
+### Total Combinations
+
+3 kernel sizes × 3 stride values = 9 combinations.
+
+Images processed: 500.
+
+Total image/configuration operations: 4,500.
+
+### Processing Method
+
+- RGB images were converted to grayscale.
+- Sobel-style X and Y kernels were generated.
+- PyTorch conv2d was used to apply convolution.
+- Custom stride values were applied.
+- Gradient magnitude was calculated.
+- Results were normalized and saved.
+- Before and after comparisons were generated.
+
+Larger Sobel-style kernels were constructed using separable smoothing and derivative coefficients.
+
+Unlike the initial OpenCV experiment, this implementation uses PyTorch to explicitly control convolution stride.
+
+---
+
+## 6. KERNEL SIZE AND STRIDE OUTPUT DIMENSIONS
+
+Original image dimensions: 32 × 32.
+
+Padding: 0 (No Padding).
+
+### Output Dimensions
+
+| Kernel Size | Stride 1 | Stride 2 | Stride 3 |
+|---|---|---|---|
+| 3 × 3 | 30 × 30 | 15 × 15 | 10 × 10 |
+| 5 × 5 | 28 × 28 | 14 × 14 | 10 × 10 |
+| 7 × 7 | 26 × 26 | 13 × 13 | 9 × 9 |
+
+### Output Size Formula
+
+Output = floor((Input - Kernel) / Stride) + 1
+
+The output dimensions decrease when kernel size or stride increases.
+
+Stride 1 preserves more spatial information, whereas stride 2 and stride 3 reduce output resolution.
+
+---
+
+## 7. PROCESSING TIME COMPARISON
+
+The following results were obtained from the generated summary.csv.
+
+| Kernel | Stride | Images | Output Size | Mean Time (sec) | Total Time (sec) |
+|---|---:|---:|---|---:|---:|
+| 3×3 | 1 | 500 | 30×30 | 0.001085 | 0.542746 |
+| 3×3 | 2 | 500 | 15×15 | 0.000600 | 0.299948 |
+| 3×3 | 3 | 500 | 10×10 | 0.000590 | 0.295223 |
+| 5×5 | 1 | 500 | 28×28 | 0.001261 | 0.630385 |
+| 5×5 | 2 | 500 | 14×14 | 0.001018 | 0.509140 |
+| 5×5 | 3 | 500 | 10×10 | 0.000922 | 0.461110 |
+| 7×7 | 1 | 500 | 26×26 | 0.001049 | 0.524441 |
+| 7×7 | 2 | 500 | 13×13 | 0.000998 | 0.498945 |
+| 7×7 | 3 | 500 | 9×9 | 0.000934 | 0.467190 |
+
+### Processing Time Observations
+
+- Highest mean processing time: 5×5 kernel with stride 1.
+- Highest mean time: 0.001261 seconds per image.
+- Lowest mean processing time: 3×3 kernel with stride 3.
+- Lowest mean time: 0.000590 seconds per image.
+- Processing time generally decreased as stride increased for each tested kernel.
+
+**Total experiment execution time:** 86.05 seconds.
+
+Note: The 86.05-second figure represents the full script runtime, including image handling and saving. CSV timings measure the individual Sobel processing calls.
+
+---
+
+## 8. GENERATED RESULTS STRUCTURE
+
+### Experiment 1
+
+Task 16 (Sobel Operator)/
+    sobel_operator.py
+    sobel_results/
+
+### Experiment 2
+
+Task 16 (Sobel Operator)/
+    sobel_kernel_stride_comparison.py
+    sobel_kernel_stride_results/
+
+The second experiment contains nine separate folders:
+
+- kernel_3_stride_1/
+- kernel_3_stride_2/
+- kernel_3_stride_3/
+- kernel_5_stride_1/
+- kernel_5_stride_2/
+- kernel_5_stride_3/
+- kernel_7_stride_1/
+- kernel_7_stride_2/
+- kernel_7_stride_3/
+
+Each configuration folder contains:
+
+- sobel_x/
+- sobel_y/
+- magnitude/
+- comparisons/
+
+Additional folders:
+
+- comparisons/
+- kernel_comparison/
+- stride_comparison/
+
+Summary file:
+
+- summary.csv
+
+All 500 images were processed for every kernel/stride combination. The visual comparison montages were generated for the first 12 images.
+
+---
+
+## 9. IMPORTANT OBSERVATIONS
+
+### Kernel Size
+
+Kernel size determines the area of the image considered during convolution.
+
+- 3×3: Smaller neighborhood and higher output resolution.
+- 5×5: Larger neighborhood and lower output resolution.
+- 7×7: Even larger neighborhood and lower output resolution.
+
+### Stride
+
+Stride determines how many pixels the convolution filter moves at each step.
+
+- Stride 1: Moves one pixel at a time.
+- Stride 2: Moves two pixels at a time.
+- Stride 3: Moves three pixels at a time.
+
+Increasing stride reduces the output dimensions.
+
+### Before and After Comparison
+
+Original images were compared with their processed outputs.
+
+The visualizations show:
+
+- Original RGB image.
+- Grayscale image.
+- Sobel X.
+- Sobel Y.
+- Gradient magnitude.
+
+These comparisons demonstrate how edge information is extracted from original images.
+
+---
+
+## 10. FINAL CONCLUSION
+
+The Sobel Operator was successfully implemented and tested on 500 CIFAR-10 images.
+
+The first experiment demonstrated basic edge detection using a 3×3 Sobel kernel.
+
+The second experiment investigated three kernel sizes (3×3, 5×5 and 7×7) and three stride values (1, 2 and 3).
+
+A total of nine configurations were evaluated, with 4,500 image/configuration processing operations.
+
+The experiments demonstrated that:
+
+1. Sobel X and Sobel Y detect directional image gradients.
+2. Gradient magnitude combines both gradient directions.
+3. Increasing kernel size changes the filter neighborhood and output dimensions.
+4. Increasing stride reduces output resolution.
+5. Processing time varies with kernel size and stride.
+6. Before and after visualizations help understand the edge detection process.
+
+The task successfully demonstrates the practical application of the Sobel Operator, image edge detection, convolution kernel sizes, stride variation and performance comparison.
+
+---
+
+## 11. FINAL TASK STATUS
+
+| Task Component | Status |
+|---|---|
+| CIFAR-10 dataset loading | Completed |
+| RGB to grayscale conversion | Completed |
+| Sobel X | Completed |
+| Sobel Y | Completed |
+| Gradient magnitude | Completed |
+| Original and processed comparisons | Completed |
+| Kernel 3×3 | Completed |
+| Kernel 5×5 | Completed |
+| Kernel 7×7 | Completed |
+| Stride 1 | Completed |
+| Stride 2 | Completed |
+| Stride 3 | Completed |
+| Output dimension analysis | Completed |
+| Processing time analysis | Completed |
+| CSV summary generation | Completed |
+| Complete project documentation | Completed |
+
+**OVERALL STATUS: TASK 16 IMPLEMENTATION AND EXPERIMENTS COMPLETED**
+
+============================================================
+END OF TASK 16
+============================================================
